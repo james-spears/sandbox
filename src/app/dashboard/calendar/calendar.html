@@ -1,0 +1,14 @@
+@switch (view()) {
+  @case ('year') {
+    <app-year-view (viewChange)="view.set($event)"></app-year-view>
+  }
+  @case ('month') {
+    <app-month-view (viewChange)="view.set($event)"></app-month-view>
+  }
+  @case ('week') {
+    <app-week-view (viewChange)="view.set($event)"></app-week-view>
+  }
+  @case ('day') {
+    <app-day-view (viewChange)="view.set($event)"></app-day-view>
+  }
+}
